@@ -1,5 +1,3 @@
-score = 0
-
 RESULTS = {
   "A X" => 1 + 3,
   "A Y" => 2 + 6,
@@ -12,6 +10,4 @@ RESULTS = {
   "C Z" => 3 + 3
 }
 
-File.readlines("02/input.txt").each { |line| score += RESULTS[line.strip] }
-
-p score
+puts File.readlines("02/input.txt").sum { |line| RESULTS[line.strip] }
