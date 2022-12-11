@@ -1,4 +1,4 @@
-require_relative "../lib/scan_with_index.rb"
+require_relative "../lib/string_ext"
 
 stacks = Hash.new { |h, k| h[k] = [] }
 
